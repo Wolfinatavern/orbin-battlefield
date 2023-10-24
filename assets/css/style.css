@@ -829,7 +829,7 @@ textarea {
 
 .hero-services div {
   background-color: #00529a;
-  background-image: url("/assets/img/eye-kaci-extra-blure.png");
+  background-image: url("assets/img/eye-kaci-extra-blure.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center 5rem;
@@ -1025,7 +1025,7 @@ textarea {
 }
 .team-image {
   height: 70vh;
-  background-image: url(/assets/img/illlustration.png);
+  background-image: url(assets/img/illlustration.png);
 }
 
 .team-desc {
@@ -1087,7 +1087,7 @@ textarea {
 .overlay {
   position: relative;
   height: 68vh;
-  background-image: url(/assets/img/close-up-view-of-contact-lenses-and-its-storage-eq-2021-08-29-22-49-10-utc.png);
+  background-image: url(assets/img/close-up-view-of-contact-lenses-and-its-storage-eq-2021-08-29-22-49-10-utc.png);
   background-size: contain;
 }
 
@@ -1120,7 +1120,7 @@ textarea {
   width: 70rem;
   height: 30rem;
   background-image: linear-gradient(0deg, #01224fc7, #01224fc7),
-    url(/assets/img/elhadj.png);
+    url(assets/img/elhadj.png);
   background-size: cover;
   padding: 0 4rem;
   border-radius: 0.8rem;
