@@ -1088,7 +1088,7 @@ textarea {
 .overlay {
   position: relative;
   height: 68vh;
-  background-image: url(assets/img/close-up-view-of-contact-lenses-and-its-storage-eq-2021-08-29-22-49-10-utc.png);
+  background-image: url("assets/img/close-up-view-of-contact-lenses-and-its-storage-eq-2021-08-29-22-49-10-utc.png");
   background-size: contain;
 }
 
