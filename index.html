@@ -11,6 +11,7 @@
     />
     <link rel="stylesheet" href="/assets/css/reset.css" />
     <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/responsive.css" />
     <script
       src="https://kit.fontawesome.com/1181442c7e.js"
       crossorigin="anonymous"
@@ -19,14 +20,54 @@
   </head>
   <body>
     <header class="header">
+      <nav class="mobile-nav">
+        <a href="/index.html">
+          <img
+            src="/assets/img/SVG/LOGOAsset 25 1.svg"
+            alt=""
+            class="mobile-logo"
+          />
+        </a>
+        <div id="mobile-links">
+          <a href="/index.html">accueil</a>
+          <a href="/services.html">services</a>
+          <a href="/about.html">à propos</a>
+          <a href="/contact.html">contact</a>
+          <a href="">blog</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i
+        ></a>
+        <div id="mobile-nav-info">
+          <div>
+            <i></i>
+            <p>
+              immeuble Djamma, Bloc A, Route de l’université - Targa Ouzemour -
+              Béjaia
+            </p>
+          </div>
+          <div>
+            <i></i>
+            <p>+213 558 769 974</p>
+            <i></i>
+            <p>+213 34 12 41 77</p>
+          </div>
+          <div>
+            <i></i>
+            <p>+213 798 64 18 42</p>
+          </div>
+          <a href="#" class="cta-mobile-nav">prenez un rendez-vous</a>
+        </div>
+      </nav>
       <nav class="navigation">
         <div class="logo">
-          <img
-            src="/assets/img/SVG/Asset 3.svg"
-            alt="Dr-kaci-logo"
-            class="logo-img"
-          />
-          <a href="/index.html" class="logo-name">Dr Kaci</a>
+          <a href="/index.html">
+            <img
+              src="/assets/img/SVG/LOGOAsset 25 1.svg"
+              alt="Dr-kaci-logo"
+              class="logo-img"
+            />
+          </a>
         </div>
         <div class="nav-list">
           <ul>
@@ -47,21 +88,14 @@
       <section class="hero-section">
         <div class="hero-elements">
           <h1 class="hero-title">une vision experte de la santé oculaire</h1>
-          <div class="dr-kaci">
-            <div class="dr large--spacing">
-              <span class="blur">dr</span>
-            </div>
-            <div class="ka">
-              <span class="k">k</span>
-              <span class="a">a</span>
-            </div>
-            <div class="ci large--spacing">
-              <span class="blur">ci</span>
-            </div>
 
-            <img src="/assets/img/SVG/Asset 1.svg" alt="" class="glasses" />
-          </div>
-          <a href="#" class="btn-cta">prenez un rendez vous</a>
+          <img
+            src="/assets/img/illustration/SVG/eye-kaci.svg"
+            alt=""
+            class="glasses"
+          />
+
+          <a href="#contact-form" class="btn-cta">prenez un rendez vous</a>
         </div>
         <div class="hero-experience">
           <div class="years-exp flex--div">
@@ -85,7 +119,7 @@
           répondre à tous vos besoins en matière de santé oculaire Découvrez
           ci-dessous les différents services que nous proposons :
         </p>
-        <div class="services-list first--list">
+        <div class="swipe-zone">
           <div class="service-item">
             <div class="circle"></div>
             <a href="/pages/angiographie.html" class="item-text"
@@ -94,49 +128,64 @@
           </div>
           <div class="service-item">
             <div class="circle"></div>
-            <a href="#" class="item-text">chirurgie des strabismes</a>
+            <a href="/pages/angiographie.html" class="item-text"
+              >chirurgie des strabismes</a
+            >
           </div>
           <div class="service-item">
             <div class="circle"></div>
-            <a href="#" class="item-text">chirurgie des voies lacrymales</a>
+            <a href="/pages/angiographie.html" class="item-text"
+              >chirurgie des voies lacrymales</a
+            >
           </div>
           <div class="service-item">
             <div class="circle"></div>
-            <a href="#" class="item-text">echogaphie b</a>
+            <a href="/pages/angiographie.html" class="item-text"
+              >echogaphie b</a
+            >
           </div>
           <div class="service-item">
             <div class="circle"></div>
-            <a href="#" class="item-text">laser slt</a>
+            <a href="/pages/angiographie.html" class="item-text">laser slt</a>
           </div>
           <div class="service-item">
             <div class="circle"></div>
-            <a href="#" class="item-text">oct angiographie</a>
+            <a href="/pages/angiographie.html" class="item-text"
+              >oct angiographie</a
+            >
           </div>
-        </div>
-        <div class="services-list second--list">
+
           <div class="service-item">
             <div class="circle"></div>
-            <a href="#" class="item-text">champ visuel</a>
-          </div>
-          <div class="service-item">
-            <div class="circle"></div>
-            <a href="#" class="item-text">chirurgie de la cataracte</a>
-          </div>
-          <div class="service-item">
-            <div class="circle"></div>
-            <a href="#" class="item-text">echographie a</a>
+            <a href="/pages/angiographie.html" class="item-text"
+              >champ visuel</a
+            >
           </div>
           <div class="service-item">
             <div class="circle"></div>
-            <a href="#" class="item-text">laser argon</a>
+            <a href="/pages/angiographie.html" class="item-text"
+              >chirurgie de la cataracte</a
+            >
           </div>
           <div class="service-item">
             <div class="circle"></div>
-            <a href="#" class="item-text">laser yag</a>
+            <a href="/pages/angiographie.html" class="item-text"
+              >echographie a</a
+            >
           </div>
           <div class="service-item">
             <div class="circle"></div>
-            <a href="#" class="item-text">tomographie (oct)</a>
+            <a href="/pages/angiographie.html" class="item-text">laser argon</a>
+          </div>
+          <div class="service-item">
+            <div class="circle"></div>
+            <a href="/pages/angiographie.html" class="item-text">laser yag</a>
+          </div>
+          <div class="service-item">
+            <div class="circle"></div>
+            <a href="/pages/angiographie.html" class="item-text"
+              >tomographie (oct)</a
+            >
           </div>
         </div>
       </section>
@@ -147,6 +196,40 @@
         <p class="about-text">
           Une experience riche et une histoire de confiance
         </p>
+        <div class="mobile-about">
+          <img src="/assets/img/clinique.jpg" alt="" class="mobile-clinic" />
+          <div class="mobile-contact-info">
+            <div class="mobile-detail">
+              <i></i>
+              <p>
+                immeuble Djamma, Bloc A, Route de l’université - Targa Ouzemour
+                - Béjaia
+              </p>
+            </div>
+            <div class="mobile-detail">
+              <i></i>
+              <p>+213 34 12 41 77</p>
+            </div>
+            <div class="mobile-detail">
+              <i></i>
+              <p>+213 558 769 974 /+213 798 64 18 42</p>
+            </div>
+          </div>
+          <div class="mobile-text-about">
+            <p>
+              Bienvenue au Cabinet Ophtalmologique du Dr. Kaci, où
+              professionnalisme et expérience se conjuguent pour votre santé
+              visuelle.
+            </p>
+            <p>
+              Le Dr. Kaci, médecin ophtalmologiste chevronné, met à votre
+              disposition son expertise forgée par de nombreuses années de
+              pratique. Son dévouement envers l'excellence et son souci constant
+              d'actualisation dans le domaine de l'ophtalmologie en font un
+              praticien reconnu.
+            </p>
+          </div>
+        </div>
         <div class="about-desc">
           <img
             src="/assets/img/clinique.jpg"
@@ -191,7 +274,7 @@
               class="logo-img aside-logo"
             />
             <p class="dr-kaci-name">dr kaci</p>
-            <a href="#" class="cta-aside">a propos de nous</a>
+            <a href="/about.html" class="cta-aside">a propos de nous</a>
           </div>
           <div class="find-us">
             <h3>retrouvez nous</h3>
@@ -211,14 +294,35 @@
         </aside>
       </section>
       <div class="section-breaker">
+        <img src="/assets/img/SVG/Layer 3.svg" alt="" />
         <h2>le choix clair pour votre vue</h2>
         <p>
           Notre expertise est là pour vous, n'hesitez pas à nous contacter si
           besoin
         </p>
-        <a href="#" class="cta-aside">prenez rendez-vous</a>
+        <div class="cta-breaker">
+          <a href="#" class="cta-aside">contactez-nous</a>
+          <a href="#" class="cta-aside cta-mobile">à propos de nous</a>
+        </div>
       </div>
       <section class="patients-review">
+        <div class="mobile-text">
+          <p>
+            Nous comprenons que votre vision est essentielle à votre qualité de
+            vie. C'est pourquoi nous nous engageons à vous offrir les meilleurs
+            soins oculaires possibles. Notre équipe médicale, formée et
+            attentive, s'efforce de répondre à vos besoins, qu'il s'agisse de
+            simples corrections visuelles ou de traitements complexes des
+            affections oculaires.
+          </p>
+          <p>
+            Dans notre cabinet, vous bénéficierez des dernières avancées
+            technologiques, garantissant ainsi des diagnostics précis et des
+            traitements adaptés. Que ce soit pour des problèmes de vision
+            courants ou des traitements de pointe, le Dr. Kaci et son équipe
+            vous accompagnent tout au long du processus.
+          </p>
+        </div>
         <div class="clinic-infos-side">
           <h2 class="patients-title">
             ce que nos <span class="patients">patients</span> disent sur nous
@@ -290,7 +394,70 @@
           </div>
         </div>
       </section>
-      <section class="contact-form">
+      <section class="form-mobile">
+        <div class="form-logo">
+          <img src="/assets/img/SVG/Layer 3.svg" alt="" />
+          <p>prenez rendez-vous</p>
+        </div>
+        <div class="mobile-form">
+          <label for="name">nom & prénom</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Entrez votre nom et prénom"
+          />
+          <label for="tel">n° téléphone</label>
+          <input
+            type="text"
+            name="tel"
+            id="tel"
+            placeholder="Entrez votre N°téléphone"
+          />
+
+          <label for="mail">Email</label>
+          <input
+            type="text"
+            name="mail"
+            id="mail"
+            placeholder="Entrez votre adresse e-mail"
+          />
+          <label for="services">service</label>
+          <select name="services" id="services">
+            <option class="choice" value="" disabled selected hidden>
+              Choisissez un service...
+            </option>
+            <option value="angiographie">angiographie</option>
+            <option value="champ visuel">champ visuel</option>
+            <option value="chirurgie des strabismes">
+              chirurgie des strabismes
+            </option>
+            <option value="chirurgie de la cataracte">
+              chirurgie de la cataracte
+            </option>
+            <option value="chirurgie des voies lacrymales">
+              chirurgie des voies lacrymales
+            </option>
+            <option value="echogaphie A">echogaphie A</option>
+            <option value="echographie B">echographie B</option>
+            <option value="laser argon">laser argon</option>
+            <option value="laser slt">laser slt</option>
+            <option value="laser yag">laser yag</option>
+            <option value="oct angiographie">oct angiographie</option>
+            <option value="tomographie (oct)">tomographie (oct)</option>
+          </select>
+          <label for="message">message</label>
+          <textarea
+            name="message"
+            id="message"
+            cols="40"
+            rows="8"
+            placeholder="Inserez votre message"
+          ></textarea>
+          <a href="#" class="form-cta">envoyer</a>
+        </div>
+      </section>
+      <section id="contact-form" class="contact-form">
         <div class="contact-info">
           <div class="contact-form-title">
             <h2 class="info-title">
@@ -326,8 +493,13 @@
 
         <div class="form-container">
           <div class="form">
-            <h2 class="form-title">Laissez un commentaire</h2>
-            <form action="" class="form-item">
+            <h2 id="cont-title" class="form-title">Laissez un commentaire</h2>
+            <h2 id="cont-title1" class="form-title">Message envoyé</h2>
+            <form
+              method="get"
+              action="mailto:fiducia.entreprise@gmail.com"
+              class="form-item"
+            >
               <div class="name">
                 <label for="name">nom & prénom</label>
                 <input
@@ -386,14 +558,16 @@
                 <textarea
                   name="message"
                   id="message"
-                  cols="80"
+                  cols="70"
                   rows="8"
                   placeholder="Inserez votre message"
                 ></textarea>
               </div>
             </form>
           </div>
-          <a href="#" class="form-cta">envoyer</a>
+          <a href="javascript:void(0)" class="form-cta" onclick="myFunction2()"
+            >envoyer</a
+          >
         </div>
       </section>
       <section class="sickness-reviews">
@@ -402,13 +576,38 @@
           <span>Causes, symptômes</span>
         </h1>
         <div class="sick-select">
-          <a href="#" class="sickness">myopie</a>
-          <a href="#" class="sickness">astigmatise</a>
-          <a href="#" class="sickness">cataracte</a>
-          <a href="#" class="sickness">décollement de la rétine</a>
-          <a href="#" class="sickness">glaucoma</a>
+          <a
+            href="javascript:void(0)"
+            class="sickness"
+            onclick="replace('div1','div2')"
+            >myopie</a
+          >
+          <a
+            href="javascript:void(0)"
+            class="sickness"
+            onclick="replace('div1','div2')"
+            >astigmatise</a
+          >
+          <a
+            href="javascript:void(0)"
+            class="sickness"
+            onclick="replace('div1','div2')"
+            >cataracte</a
+          >
+          <a
+            href="javascript:void(0)"
+            class="sickness"
+            onclick="replace('div1','div2')"
+            >décollement de la rétine</a
+          >
+          <a
+            href="javascript:void(0)"
+            class="sickness"
+            onclick="replace('div1','div2')"
+            >glaucoma</a
+          >
         </div>
-        <div class="sick-desc">
+        <div id="div-1" class="sick-desc">
           <img
             src="assets/img/baloon.jpg"
             alt="balon de myopie"
@@ -442,18 +641,48 @@
             <p>hard to see objects</p>
           </div>
         </div>
-        <a href="#" class="cta-sick">lire plus</a>
+        <div id="div-2" class="sick-desc">
+          <img
+            src="assets/img/baloon.jpg"
+            alt="balon de myopie"
+            class="baloon"
+          />
+          <div class="sick-details">
+            <h2>astigmatise</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+              doloremque quae qui nulla deserunt. Ratione cumque dolore quisquam
+              asperiores perspiciatis aspernatur totam repellendus error illum
+              aut repudiandae, nulla assumenda porro.
+            </p>
+          </div>
+          <div class="symp">
+            <p>vision floue</p>
+            <p>fatigue occulaire</p>
+            <p>clignement fréquent</p>
+          </div>
+          <div class="symp">
+            <p>sensibilité a la lumière</p>
+            <p>vision double</p>
+            <p>maux de tête</p>
+          </div>
+          <div class="symp">
+            <p>plisser les yeux</p>
+            <p>tempor orc</p>
+            <p>hard to see objects</p>
+          </div>
+        </div>
+        <a href="/pages/angiographie.html" class="cta-sick">lire plus</a>
       </section>
     </main>
     <footer>
       <section class="footer-nav">
         <div class="logo">
           <img
-            src="/assets/img/SVG/Asset 2.svg"
+            src="/assets/img/SVG/newAsset 4 1.svg"
             alt="Dr-kaci-logo"
             class="logo-footer"
           />
-          <a href="#" class="logo-name">Dr Kaci</a>
         </div>
         <div class="menu">
           <h3>menu</h3>
@@ -503,9 +732,35 @@
           </ul>
         </div>
         <div class="subscribe">
-          <label for="email">s'abonner a la newsletter</label>
-          <input type="email" placeholder="example@hotmail.com" />
-          <a href="#" class="footer-cta">s'abonner</a>
+          <label id="sub" for="email">s'abonner a la newsletter</label>
+          <input id="ma" type="email" placeholder="example@hotmail.com" />
+          <label id="welc" for="">Bienvenue dans notre communauté</label>
+          <a
+            href="javascript:void(0);"
+            class="footer-cta"
+            onclick="myFunction1()"
+            >s'abonner</a
+          >
+        </div>
+        <div class="mobile-contact">
+          <h3>contact</h3>
+          <ul>
+            <li class="footer-items">
+              <a href=""
+                >immeuble Djamma, Bloc A, Route de l’université - Targa Ouzemour
+                - Béjaia</a
+              >
+            </li>
+            <li class="footer-items">
+              <a href="">+213 34 12 41 77</a>
+            </li>
+            <li class="footer-items">
+              <a href="">+213 558 769 974 </a>
+            </li>
+            <li class="footer-items">
+              <a href="">+213 798 64 18 42</a>
+            </li>
+          </ul>
         </div>
       </section>
       <section class="copyright">
@@ -517,5 +772,6 @@
         </div>
       </section>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>

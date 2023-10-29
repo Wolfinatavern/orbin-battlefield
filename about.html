@@ -11,6 +11,7 @@
     />
     <link rel="stylesheet" href="/assets/css/reset.css" />
     <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/responsive.css" />
     <script
       src="https://kit.fontawesome.com/1181442c7e.js"
       crossorigin="anonymous"
@@ -21,12 +22,13 @@
     <header class="header">
       <nav class="navigation">
         <div class="logo">
-          <img
-            src="/assets/img/SVG/Asset 3.svg"
-            alt="Dr-kaci-logo"
-            class="logo-img"
-          />
-          <a href="#" class="logo-name">Dr Kaci</a>
+          <a href="/index.html">
+            <img
+              src="/assets/img/SVG/LOGOAsset 25 1.svg"
+              alt="Dr-kaci-logo"
+              class="logo-img"
+            />
+          </a>
         </div>
         <div class="nav-list">
           <ul>
@@ -89,9 +91,9 @@
         </p>
         <div class="welcome-text">
           <div class="about-welcome">
-            <div class="circle"></div>
+            <div class="circle welc-circ"></div>
             <p>soins occulaires de haute qualité</p>
-            <div class="circle"></div>
+            <div class="circle welc-circ"></div>
             <p>equipements et technologies avancées</p>
           </div>
           <div class="welcome">
@@ -143,7 +145,7 @@
           Notre expertise est là pour vous, n'hesitez pas à nous contacter si
           besoin
         </p>
-        <a href="#" class="cta-aside">prenez rendez-vous</a>
+        <a href="contact.html" class="cta-aside">contactez nous</a>
       </div>
       <div class="expertise">
         <img src="/assets/img/illustartion.png" alt="" />
@@ -282,9 +284,15 @@
           </ul>
         </div>
         <div class="subscribe">
-          <label for="email">s'abonner a la newsletter</label>
-          <input type="email" placeholder="example@hotmail.com" />
-          <a href="#" class="footer-cta">s'abonner</a>
+          <label id="sub" for="email">s'abonner a la newsletter</label>
+          <input id="ma" type="email" placeholder="example@hotmail.com" />
+          <label id="welc" for="">Bienvenue dans notre communauté</label>
+          <a
+            href="javascript:void(0);"
+            class="footer-cta"
+            onclick="myFunction1()"
+            >s'abonner</a
+          >
         </div>
       </section>
       <section class="copyright">

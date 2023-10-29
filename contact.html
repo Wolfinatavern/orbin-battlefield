@@ -11,6 +11,7 @@
     />
     <link rel="stylesheet" href="/assets/css/reset.css" />
     <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/responsive.css" />
     <script
       src="https://kit.fontawesome.com/1181442c7e.js"
       crossorigin="anonymous"
@@ -21,12 +22,13 @@
     <header class="header">
       <nav class="navigation">
         <div class="logo">
-          <img
-            src="/assets/img/SVG/Asset 3.svg"
-            alt="Dr-kaci-logo"
-            class="logo-img"
-          />
-          <a href="#" class="logo-name">Dr Kaci</a>
+          <a href="/index.html">
+            <img
+              src="/assets/img/SVG/LOGOAsset 25 1.svg"
+              alt="Dr-kaci-logo"
+              class="logo-img"
+            />
+          </a>
         </div>
         <div class="nav-list">
           <ul>
@@ -85,8 +87,9 @@
         </div>
 
         <div class="form-container about-container-info">
-          <div class="form">
-            <h2 class="form-title">contactez nous par message ici</h2>
+          <div class="form about-form">
+            <h2 id="cont-title" class="form-title">Laissez un commentaire</h2>
+            <h2 id="cont-title1" class="form-title">Message envoyé</h2>
             <form action="" class="form-item">
               <div class="name">
                 <label for="name">nom & prénom</label>
@@ -153,7 +156,9 @@
               </div>
             </form>
           </div>
-          <a href="#" class="form-cta">envoyer</a>
+          <a href="javascript:void(0)" class="form-cta" onclick="myFunction2()"
+            >envoyer</a
+          >
         </div>
       </section>
       <section>
@@ -226,9 +231,15 @@
           </ul>
         </div>
         <div class="subscribe">
-          <label for="email">s'abonner a la newsletter</label>
-          <input type="email" placeholder="example@hotmail.com" />
-          <a href="#" class="footer-cta">s'abonner</a>
+          <label id="sub" for="email">s'abonner a la newsletter</label>
+          <input id="ma" type="email" placeholder="example@hotmail.com" />
+          <label id="welc" for="">Bienvenue dans notre communauté</label>
+          <a
+            href="javascript:void(0);"
+            class="footer-cta"
+            onclick="myFunction1()"
+            >s'abonner</a
+          >
         </div>
       </section>
       <section class="copyright">

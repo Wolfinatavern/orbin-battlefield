@@ -20,12 +20,20 @@ body {
   font-weight: 400;
   background-color: #fefdfd;
 }
+body::-webkit-scrollbar {
+  display: none;
+}
 .header {
   background-color: #00529a;
 }
+.mobile-nav {
+  display: none;
+}
 .navigation {
   display: flex;
+
   justify-content: space-between;
+  align-items: center;
   padding: 1.2rem 3.6rem;
   max-width: 175rem;
   font-size: 2rem;
@@ -34,26 +42,15 @@ body {
   border-radius: 0 0 0.8rem 0.8rem;
 }
 
-.logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1.6rem;
-}
-
 .logo-img {
-  width: 8rem;
-}
-
-.logo-name:link,
-.logo-name:visited {
-  color: #00529a;
-  display: inline-block;
-  text-transform: uppercase;
+  text-align: left;
+  height: 4rem;
+  flex-basis: 0;
 }
 
 .nav-list ul {
   display: flex;
+  flex-basis: 0;
   gap: 5rem;
   align-items: center;
 }
@@ -61,6 +58,11 @@ body {
 .nav-items:visited,
 .nav-items:link {
   color: #00529a;
+}
+
+.nav-items:hover {
+  border-bottom: 2px solid #00529a;
+  transition: boder-bottom 1s ease-in-out;
 }
 
 .contact-num {
@@ -129,8 +131,7 @@ body {
   filter: blur(10px);
 }
 .glasses {
-  width: 35%;
-  position: absolute;
+  width: 80%;
 }
 
 .btn-cta:link,
@@ -179,7 +180,7 @@ body {
   margin-top: 3.6rem;
   display: grid;
   grid-template-rows: 8rem 8rem 1fr;
-  grid-template-columns: 70rem 70rem;
+  grid-template-columns: 150rem;
   justify-content: center;
   text-align: center;
 }
@@ -202,6 +203,11 @@ body {
 }
 .services-list {
   padding: 0 2.4rem 0 0.4rem;
+}
+.swipe-zone {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 5rem;
 }
 .service-item {
   display: flex;
@@ -241,7 +247,9 @@ body {
   text-align: center;
   grid-template-columns: 116rem 55rem;
   grid-template-rows: 17rem 9rem 1fr;
-  gap: -20rem;
+}
+.mobile-about {
+  display: none;
 }
 .about-title {
   margin-top: 10rem;
@@ -370,6 +378,12 @@ body {
   padding: 9.6rem 2.6rem;
   margin-top: 10rem;
 }
+.cta-mobile {
+  display: none;
+}
+.section-breaker img {
+  display: none;
+}
 
 .section-breaker h2 {
   color: #fefdfd;
@@ -389,6 +403,12 @@ body {
   line-height: 1.6;
   display: inline-block;
   width: 21%;
+}
+.mobile-text {
+  display: none;
+}
+.form-mobile {
+  display: none;
 }
 .patients-review {
   display: grid;
@@ -646,7 +666,6 @@ textarea {
 .white-contact a {
   color: #e5e4e4;
 }
-
 .sickness-reviews {
   display: grid;
   text-align: center;
@@ -657,7 +676,6 @@ textarea {
   gap: 2rem;
   margin-bottom: 3rem;
 }
-
 .review-title {
   margin-top: 10rem;
   font-size: 3.6rem;
@@ -705,13 +723,11 @@ textarea {
   max-width: 90rem;
   row-gap: 5rem;
 }
-
 .baloon {
   width: 70%;
   clip-path: circle();
   transform: translate(5rem);
 }
-
 .sick-details {
   display: flex;
   flex-direction: column;
@@ -726,7 +742,6 @@ textarea {
   color: #01224f;
   font-weight: 500;
 }
-
 .sick-details h2 {
   font-weight: 600;
   font-size: 2.6rem;
@@ -756,6 +771,11 @@ textarea {
   max-height: 3rem;
   justify-self: flex-end;
 }
+
+#div-2 {
+  display: none;
+}
+
 .footer-nav {
   /* padding: 4rem 0; */
   background-color: #00529a;
@@ -778,13 +798,17 @@ textarea {
   margin-bottom: 2rem;
   color: #fefdfd;
 }
-
+.mobile-contact {
+  display: none;
+}
 .menu a:link,
 .menu a:visited,
 .blog a:link,
 .blog a:visited,
 .dr-kaci-center a:link,
-.dr-kaci-center a:visited {
+.dr-kaci-center a:visited,
+.mobile-contact a:link,
+.mobile-contact a:visited {
   font-size: 1.4rem;
   font-weight: 200;
   color: #fefdfd;
@@ -825,6 +849,7 @@ textarea {
   margin-left: 4rem;
   font-size: 2rem;
 }
+
 /* Services */
 
 .hero-services div {
@@ -870,12 +895,14 @@ textarea {
   padding: 6rem 4rem;
   flex-direction: column;
   gap: 1rem;
+  border-radius: 0.8rem;
 }
 .service-card img {
   float: left;
   width: 550px;
   height: 300px;
   object-fit: contain;
+  border-radius: 0.8rem;
 }
 .card-title {
   display: flex;
@@ -1086,9 +1113,9 @@ textarea {
 
 .overlay {
   position: relative;
-  height: 68vh;
+  height: 100vh;
   background-image: url(/assets/img/close-up-view-of-contact-lenses-and-its-storage-eq-2021-08-29-22-49-10-utc.png);
-  background-size: contain;
+  background-size: cover;
 }
 
 .play-btn {
@@ -1168,6 +1195,7 @@ textarea {
 .why-us {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
   align-items: center;
   gap: 10rem;
 }
@@ -1262,4 +1290,12 @@ textarea {
 
 .about-container-info {
   border: 1px solid #dbe6ee;
+}
+
+#welc {
+  display: none;
+}
+
+#cont-title1 {
+  display: none;
 }

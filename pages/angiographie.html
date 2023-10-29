@@ -20,14 +20,14 @@
   <body>
     <header class="header">
       <nav class="navigation">
-        <div class="logo">
+        <a href="/index.html">
           <img
-            src="/assets/img/SVG/Asset 3.svg"
+            src="/assets/img/SVG/Logo.svg"
             alt="Dr-kaci-logo"
             class="logo-img"
           />
-          <a href="#" class="logo-name">Dr Kaci</a>
-        </div>
+        </a>
+
         <div class="nav-list">
           <ul>
             <li><a class="nav-items" href="/index.html">Accueil</a></li>
@@ -54,7 +54,7 @@
         <div class="detailed-sick">
           <div class="sick-illustration">
             <img src="/assets/img/Rectangle (6).png" alt="" class="sick-img" />
-            <a href="" class="sick-cta">prenez rendez-vous</a>
+            <a href="/contact.html" class="sick-cta">prenez rendez-vous</a>
           </div>
           <div class="info-sick">
             <h1>Qu'est-ce que <span>l’angiographie </span>?</h1>
@@ -156,7 +156,7 @@
           Notre expertise est là pour vous, n'hesitez pas à nous contacter si
           besoin
         </p>
-        <a href="#" class="cta-aside">prenez rendez-vous</a>
+        <a href="/contact.html" class="cta-aside">prenez rendez-vous</a>
       </div>
       <section class="patients-review">
         <div class="clinic-infos-side">
@@ -440,9 +440,15 @@
           </ul>
         </div>
         <div class="subscribe">
-          <label for="email">s'abonner a la newsletter</label>
-          <input type="email" placeholder="example@hotmail.com" />
-          <a href="#" class="footer-cta">s'abonner</a>
+          <label id="sub" for="email">s'abonner a la newsletter</label>
+          <input id="ma" type="email" placeholder="example@hotmail.com" />
+          <label id="welc" for="">Bienvenue dans notre communauté</label>
+          <a
+            href="javascript:void(0);"
+            class="footer-cta"
+            onclick="myFunction1()"
+            >s'abonner</a
+          >
         </div>
       </section>
       <section class="copyright">
